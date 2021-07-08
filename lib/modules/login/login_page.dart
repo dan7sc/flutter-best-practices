@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '/shared/widgets/input_text/input_text_widget.dart';
+
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);
 
@@ -18,8 +20,8 @@ class _LoginPageState extends State<LoginPage> {
             Form(
               child: Column(
                 children: [
-                  TextFormField(),
-                  TextFormField(),
+                  InputTextWidget(),
+                  InputTextWidget(),
                 ],
               ),
             ),
