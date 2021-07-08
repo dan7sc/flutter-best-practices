@@ -16,31 +16,34 @@ class _LoginPageState extends State<LoginPage> {
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Form(
-                child: Column(
-                  children: [
-                    InputTextWidget(
-                      label: "Email",
-                      validator: (value) => value!.isEmpty ? "Vazio" : null,
-                      onChanged: (value) {},
-                    ),
-                    InputTextWidget(
-                      label: "Password",
-                      obscureText: true,
-                      validator: (value) => value!.isEmpty ? "Vazio" : null,
-                      onChanged: (value) {},
-                    ),
-                  ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Form(
+                  child: Column(
+                    children: [
+                      InputTextWidget(
+                        label: "Email",
+                        validator: (value) => value!.isEmpty ? "Vazio" : null,
+                        onChanged: (value) {},
+                      ),
+                      InputTextWidget(
+                        label: "Password",
+                        obscureText: true,
+                        validator: (value) => value!.isEmpty ? "Vazio" : null,
+                        onChanged: (value) {},
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text("Entrar"),
-              ),
-            ],
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text("Entrar"),
+                ),
+              ],
+            ),
           ),
         ),
       ),
