@@ -30,13 +30,17 @@ class _LoginPageState extends State<LoginPage> {
                       InputTextWidget(
                         label: "Email",
                         validator: (value) => value!.isEmpty ? "Vazio" : null,
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          controller.onChanged(email: value);
+                        },
                       ),
                       InputTextWidget(
                         label: "Password",
                         obscureText: true,
                         validator: (value) => value!.isEmpty ? "Vazio" : null,
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          controller.onChanged(password: value);
+                        },
                       ),
                     ],
                   ),
