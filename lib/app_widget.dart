@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'modules/splash/splash_page.dart';
+
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,7 +12,7 @@ class AppWidget extends StatelessWidget {
       ),
       initialRoute: "/splash",
       routes: {
-        "/splash": (context) => Container(),
+        "/splash": (context) => SplashPage(),
         "/login": (context) => Container(),
         "/home": (context) => Container(),
       },
