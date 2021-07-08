@@ -49,7 +49,11 @@ class _LoginPageState extends State<LoginPage> {
                   height: 24,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    if (controller.login()) {
+                      Navigator.pushReplacementNamed(context, "/home");
+                    }
+                  },
                   child: Text("Entrar"),
                 ),
               ],

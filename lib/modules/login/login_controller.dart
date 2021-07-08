@@ -7,4 +7,12 @@ class LoginController {
     this.password = password ?? this.password;
     print("Email ${this.email}, password ${this.password}");
   }
+
+  bool login() {
+    if (email == "user@email.com" && password == "123456") {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
