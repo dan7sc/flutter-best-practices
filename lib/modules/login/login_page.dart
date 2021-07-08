@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '/shared/widgets/input_text/input_text_widget.dart';
+import '../../shared/widgets/input_text/input_text_widget.dart';
+import 'login_controller.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);
@@ -10,6 +11,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
