@@ -11,8 +11,20 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("LoginPage"),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Form(
+              child: Column(
+                children: [
+                  TextFormField(),
+                  TextFormField(),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
